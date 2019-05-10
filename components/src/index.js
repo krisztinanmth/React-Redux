@@ -11,19 +11,19 @@ const App = () => {
         avatar={faker.image.avatar()}
         author="Alex"
         timeOfPosting = "Yesterday 11:00 AM"
-        text="Nice blog post!"
+        content="Nice blog post!"
       />
       <CommentDetails
         avatar={faker.image.avatar()}
         author="Sam"
         timeOfPosting = "Today 2:00 AM"
-        text="loved reading this one"
+        content="loved reading this one"
       />
       <CommentDetails
         avatar={faker.image.avatar()}
         author="Julia"
         timeOfPosting = "Today 5:00 PM"
-        text="true words they are"
+        content="true words they are"
       />
     </div>
   )
