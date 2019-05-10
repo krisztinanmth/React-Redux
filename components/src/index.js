@@ -4,7 +4,6 @@ import CommentDetails from './CommentDetail'
 import faker from 'faker'
 
 const App = () => {
-
   return (
     <div className="ui container comments">
       <CommentDetails
