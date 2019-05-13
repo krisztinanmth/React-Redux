@@ -1,5 +1,16 @@
 import React from "react";
 
+const seasonConfig = {
+  summer: {
+    text: 'Let\'s have some ice-cream',
+    iconName: 'sun outline'
+  },
+  winter: {
+    text: 'Brrrr, it\'s chilly',
+    iconName: 'snowflake outline'
+  }
+}
+
 const getSeason = (latitude, month) => {
   if (month > 2 && month < 9) {
     return latitude > 0 ? 'summer' : 'winter';
@@ -10,14 +21,13 @@ const getSeason = (latitude, month) => {
 
 const SeasonDisplay = props => {
   const season = getSeason(props.lat, new Date().getMonth());
-  const text = season === 'summer' ? 'Let\'s have some ice-cream' : 'Brrrr, it\'s chilly';
-  const icon = season === 'summer' ? 'sun outline' : 'snowflake outline';
+  const { text, iconName } = seasonConfig[season]; // {text, iconName} - destructured
 
   return (
   <div>
-    <i className={`${icon} icon`} />
+    <i className={`${iconName} icon`} />
     <h1>{text}</h1>
-    <i className={`${icon} icon`} />
+    <i className={`${iconName} icon`} />
   </div>
   );
 };
