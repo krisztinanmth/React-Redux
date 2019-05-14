@@ -2,8 +2,9 @@ import React from "react";
 
 const ImageList = props => {
 
-  const images = props.images.map(image => {
-    return <img className="ui medium bordered image" key={image.id} alt="" src={image.urls.regular} />
+  // destructure image as i need image.id, image.description & image.urls
+  const images = props.images.map(({ description, id, urls }) => {
+    return <img className="ui medium bordered image" key={id} alt={description} src={urls.regular} />
   })
   return <div>{images}</div>;
 };
