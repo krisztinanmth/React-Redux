@@ -1,13 +1,22 @@
 import React from "react";
-import './ImageList.css'
+import "./ImageList.css";
+import ImageCard from './ImageCard';
 
 const ImageList = props => {
-
-  // destructure image as i need image.id, image.description & image.urls
-  const images = props.images.map(({ description, id, urls }) => {
-    return <img className="ui large bordered image" key={id} alt={description} src={urls.regular} />
-  })
-  return <div className="image-list">{images}</div>;
+  const images = props.images.map(image => {
+    return (
+      <ImageCard
+        className="ui large bordered image"
+        key={image.id}
+        image={image}
+      />
+    );
+  });
+  return (
+    <div>
+      <div className="image-list">{images}</div>
+    </div>
+  );
 };
 
 export default ImageList;
