@@ -6,7 +6,6 @@ const ImageList = props => {
   const images = props.images.map(image => {
     return (
       <ImageCard
-        className="ui large bordered image"
         key={image.id}
         image={image}
       />
