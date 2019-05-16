@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
+import postsReducer from './postsReducer'
 
 export default combineReducers({
-  replaceMe: () => 'replace this dummy reducer with a real one'
+  posts: postsReducer
 })
