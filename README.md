@@ -4,7 +4,7 @@ projects to learn and practise React &amp; Redux
 ### streams
   a video streaming app (like Twitch.tv) with built-in authentication system<br />
   in the app every user can create unlimited channnels/streams that they can stream to<br />
-  pages: [index page, show stream] [create stream, edit stream, delete stream]<br />
+  routes: [index page, show stream] [create stream, edit stream, delete stream]<br />
     ⚽️ **aim of project:**<br />
         * learn how to handle navigation inside react app<br />
         * learn to handle authentication in react app<br />
