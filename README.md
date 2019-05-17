@@ -1,6 +1,17 @@
 # React-Redux
 projects to learn and practise React &amp; Redux
 
+### streams
+  a video streaming app (like Twitch.tv) with built-in authentication system<br />
+  in the app every user can create unlimited channnels/streams that they can stream to<br />
+  pages: [index page, show stream] [create stream, edit stream, delete stream]<br />
+  *aim of project:*<br />
+      *learn how to handle navigation inside react app*<br />
+      *learn to handle authentication in react app*<br />
+      *learn to handle forms in redux*<br />
+      *master crud operations in React/Redux*<br />
+      *practise error handling*<br />
+
 ### blog
   fetching blog posts and author data from JSONPlaceholder API and rendering them<br />
   *aim of project:*<br />
