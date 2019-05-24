@@ -4,6 +4,24 @@
       "title": "My Stream",
       "description": "my first stream",
       "id": 1
+    },
+    {
+      "title": "test  EDIT",
+      "description": "test",
+      "userId": "109142822940086268068",
+      "id": 2
+    },
+    {
+      "title": "stream 6",
+      "description": "stream created to have more streams",
+      "userId": "109142822940086268068",
+      "id": 4
+    },
+    {
+      "title": "stream 7",
+      "description": "stream created to have more streams",
+      "userId": "109142822940086268068",
+      "id": 5
     }
   ]
 }
