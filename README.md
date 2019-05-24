@@ -3,7 +3,7 @@ projects to learn and practise React &amp; Redux
 
 ### translate
   a simple and straightforward app, which shows a language selector at the top of the screen ...
-  any time the user clicks on a flag, a form is rendered in chosen language underneath
+  any time the user clicks on a flag, a form is rendered in chosen language underneath<br />
     ⚽️ **aim of project:**<br />
       * learn how to use context system with React<br />
 
