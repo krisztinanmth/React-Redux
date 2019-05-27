@@ -1,12 +1,6 @@
 # React-Redux
 projects to learn and practise React &amp; Redux
 
-### translate
-  a simple and straightforward app, which shows a language selector at the top of the screen ...
-  any time the user clicks on a flag, a form is rendered in chosen language underneath<br />
-    ⚽️ **aim of project:**<br />
-      * learn how to use Context system with React<br />
-
 ### streams
   a video streaming app (like Twitch.tv) with built-in authentication system<br />
   in the app every user can create unlimited channnels/streams that they can stream to<br />
@@ -17,6 +11,12 @@ projects to learn and practise React &amp; Redux
         * learn to handle forms in redux<br />
         * master crud operations in React/Redux<br />
         * practise error handling<br />
+
+### translate
+  a simple and straightforward app, which shows a language selector at the top of the screen ...
+  any time the user clicks on a flag, a form is rendered in chosen language underneath<br />
+    ⚽️ **aim of project:**<br />
+      * learn how to use Context system with React<br />
 
 ### blog
   fetching blog posts and author data from JSONPlaceholder API and rendering them<br />
