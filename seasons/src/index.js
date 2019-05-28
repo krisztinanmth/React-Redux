@@ -1,33 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import SeasonDisplay from "./components/SeasonDisplay";
 import Spinner from "./components/Spinner";
 
-class App extends React.Component {
-  state = { latitude: null, errorMessage: "" };
+const App = () => {
+  const [latitude, setLatitude] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
 
-  componentDidMount() {
+  useEffect(() => {
     window.navigator.geolocation.getCurrentPosition(
-      position => this.setState({ latitude: position.coords.latitude }),
-      error => this.setState({ errorMessage: error.message })
+      position => setLatitude(position.coords.latitude),
+      error => setErrorMessage(error.message)
     );
+    // empty array is given as second argument, because i only want to run this piece of code one time when the component renders
+    // `componentDidMount`
+  }, []);
+
+  let content;
+  if (errorMessage) {
+    content = <div>Error: {errorMessage}</div>;
+  } else if (latitude) {
+    content = <SeasonDisplay lat={latitude} />;
+  } else {
+    content = <Spinner message="please accept location request" />;
   }
 
-  renderContent() {
-    if (this.state.errorMessage && !this.state.latitude) {
-      return <div>{this.state.errorMessage}</div>;
-    }
-
-    if (!this.state.errorMessage && this.state.latitude) {
-      return <SeasonDisplay lat={this.state.latitude} />;
-    }
-
-    return <Spinner message="please accept location request" />;
-  }
-
-  render() {
-    return <div className="App">{this.renderContent()}</div>;
-  }
-}
+  return <div className="App">{content}</div>;
+};
 
 ReactDOM.render(<App />, document.querySelector("#root"));
